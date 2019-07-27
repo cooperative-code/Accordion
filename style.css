@@ -1,0 +1,57 @@
+.accordion {
+  width: 40%;
+}
+.accordion .btn-accordion {
+  display: block;
+  background-color: #c5c1c1;
+  padding: 10px 5px;
+  color: black;
+  border: 1px solid #e0dfdf;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.accordion .accordion-panel {
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  /* height: 0; */
+  max-height: 0;
+  background-color: #f3eeee;
+  transition: max-height 0.2s ease-out;
+}
+.open {
+}
+.btn-accordion {
+  position: relative;
+}
+.btn-accordion::after {
+  content: '';
+  display: block;
+  height: 11px;
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -moz-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  -o-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+  right: 1em;
+  background: url(cd-arrow.svg) no-repeat center center;
+  background-size: 8px 11px;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.accordion.open .btn-accordion::after {
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
