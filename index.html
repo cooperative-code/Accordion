@@ -8,41 +8,30 @@
     <title>Accordion</title>
   </head>
   <body>
-    <div class="accordion">
-      <a class="btn-accordion" href="javascript:void(0)">
-        Item 1
-      </a>
-      <div class="accordion-panel">
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using
-        </p>
-      </div>
-    </div>
-    <div class="accordion">
-      <a class="btn-accordion" href="javascript:void(0)">
-        Item 2
-      </a>
-      <div class="accordion-panel">
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using
-        </p>
-      </div>
-    </div>
-    <div class="accordion">
-      <a class="btn-accordion" href="javascript:void(0)">Item 3</a>
-      <div class="accordion-panel">
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking
-          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-          opposed to using
-        </p>
-      </div>
-    </div>
+  
 
-    <script src="app.js"></script>
+    <div id="accordion" class="accordion"></div>
+
+    <hr />
+
+    <br />
+
+    <div id="accordion2" class="accordion"></div>
+
+    <script src="accordion.js"></script>
+
+    <script>
+      var accordion = new Accordion('#accordion', '');
+
+      accordion.add('#notebooks', 'Notebooks', '<p>Notebooks bolados</p>');
+
+      accordion.add('#clientes', 'Clientes', '<p>Clientes bolados</p>');
+
+      var accordion2 = new Accordion('#accordion2', '');
+
+      accordion2.add('#motos', 'Motos', '<p>Motos boladas</p>');
+
+      accordion2.add('#bicicletas', 'Bicicletas', '<p>Bicicletas boladas</p>', 'red');
+    </script>
   </body>
 </html>

@@ -1,3 +1,9 @@
+/**
+ * Manipular via JS simples, usar este código,
+ * caso queira estender novas funcionalidades,
+ * usar o arquivo accordion.js
+ */
+
 (function() {
   let accordions = document.querySelectorAll('.accordion');
   accordions.forEach(function(element, i) {

@@ -19,8 +19,7 @@
   background-color: #f3eeee;
   transition: max-height 0.2s ease-out;
 }
-.open {
-}
+
 .btn-accordion {
   position: relative;
 }
@@ -54,4 +53,8 @@
   -ms-transform: translateY(-50%) rotate(-90deg);
   -o-transform: translateY(-50%) rotate(-90deg);
   transform: translateY(-50%) rotate(-90deg);
+}
+
+.red{
+  color: red !important;
 }
